@@ -1,0 +1,140 @@
+:root {
+    --cryto-blue: #23caca;
+    --dark-white: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica, arial;
+    background: var(--dark-white);
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    background: var(--cryto-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.lista-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--dark-white);
+
+}
+
+.compra-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--dark-white);
+}
+
+.compra-container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.compra-container form label {
+    font-size: 24px;
+}
+
+.compra-container form input {
+    height: 36px;
+    background: white;
+    border: none;
+    outline-color: var(--cryto-blue);
+    border-radius: 12px;
+    padding: 6px 24px;
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.compra-container form select {
+    height: 46px;
+    background: white;
+    border: none;
+    outline-color: var(--cryto-blue);
+    border-radius: 12px;
+    padding: 6px 24px;
+    margin: 6px 0;
+    font-size: 20px;
+}
+
+.compra-container form button {
+    background: var(--cryto-blue);
+    border: none;
+    height: 42px;
+    width: 33%;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.compra-container form a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 42px;
+    width: 33%;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--cryto-blue);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 54px;
+}
+
+@media screen and (max-width: 720px) {
+    .container img {
+        display: none;
+    }
+
+    .compra-container form button {
+        width: 45%;
+    }
+    
+    .compra-container form a {
+        width: 45%;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    
+}
